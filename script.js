@@ -28,8 +28,8 @@ async function getDataAndUpdate(name) {
         document.getElementById("ImageOfPokemon").src =  await image;
         const text = `
         <h1 class="capitalize text-xl">${data["name"]}</h1>
-        <h1 class="mt-4">HT:${data["height"]}</h1>
-        <h1>WT:${data["weight"]}</h1>
+        <h1 class="mt-4">HT:${data["height"]}Mts</h1>
+        <h1>WT:${data["weight"]}Kg</h1>
         <p class="mt-4">${flavor_text_entries.replace("\f", "\n")}</p>
         `;
         document.getElementById("InfoText").innerHTML = text
